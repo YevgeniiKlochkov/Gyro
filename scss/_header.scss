@@ -1,0 +1,31 @@
+.header {
+  padding: 55px 0;
+  &_container{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .menu {
+        &_item {
+          text-decoration: none;
+          font-family: 'Lato', sans-serif;
+          font-size: 1.25rem;
+          margin-left: 2.2rem;
+          position: relative;
+          &:after{
+            content: '';
+            display: block;
+            position: absolute;
+            right: 0;
+            width: 0;
+            height: 2px;
+            background-color: $fontColorBlack;
+            transition: all .2s linear;
+          }
+          &:hover:after{
+            width: 100%;
+          }
+        }
+      }
+}

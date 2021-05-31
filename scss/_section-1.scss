@@ -1,0 +1,94 @@
+.section-1 {
+  background: url("../layout/Gyro-assets/bg-section1.jpg") 100% 0/50% auto no-repeat;
+
+  &_content {
+    padding-top: 90px;
+    padding-bottom: 50px;
+  }
+  .content_text {
+    max-width: 33%;
+    height: 9rem;
+    &__full {
+      height: 14rem;
+    }
+  }
+  .advantages {
+    max-width: 75%;
+    display: grid;
+
+    &_box {
+      display: flex;
+    }
+
+    &_title {
+      width: 230px;
+      height: 208px;
+      background: #2a2a2c;
+      margin-top: -63px;
+      position: relative;
+      z-index: 1;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      &:before {
+        content: '';
+        position: relative;
+        margin-left: -300px;
+        width: 300px;
+        height: 208px;
+        background: #2a2a2c;
+      }
+
+      .box-text {
+        * {
+          color: #fff;
+          display: block;
+        }
+        span:nth-child(1) {
+          font-size: 2.29rem;
+          font-weight: 900;
+          padding-bottom: 5px;
+        }
+        span:nth-child(2) {
+          font-family: 'MuseoSansCyrl', Arial sans-serif;
+          font-size: 1.5rem;
+          font-weight: 500;
+        }
+        span:nth-child(3) {
+          font-family: 'MuseoSansCyrl', Arial sans-serif;
+          font-weight: 900;
+          font-size: 2rem;
+        }
+      }
+    }
+    .advantages-list {
+      width: calc(100% - 230px);
+      display: flex;
+      div {
+        text-align: center;
+        font-family: 'MuseoSansCyrl', Arial sans-serif;
+      }
+      .advantage {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        width: 33.3333%;
+        height: 145px;
+        background: #e6e6e6;
+        border: 1px solid #fff;
+        &-title {
+          font-size: 3.21rem;
+          font-weight: 300;
+          margin-bottom: 1.43rem;
+        }
+        &-text {
+          font-size: 0.86rem;
+          font-weight: 700;
+          line-height: 1.76rem;
+          color: #676767;
+        }
+      }
+    }
+
+  }
+}

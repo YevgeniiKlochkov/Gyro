@@ -1,0 +1,50 @@
+.hero {
+  height: 450px;
+  position: relative;
+
+  &_container {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  &-img {
+    max-width: 60%;
+    padding-top: 60px;
+    img {
+      width: 100%;
+    }
+  }
+
+  &-content {
+    max-width: 33%;
+
+    .content_title {
+      font-weight: 300;
+
+    }
+    .content_text {
+      height: 5.6rem;
+      &:hover{
+        cursor: pointer;
+      }
+
+      &__full {
+        height: 14rem;
+        //@media (max-width: 991.98px){
+        //height: 8rem;
+      }
+    }
+  }
+  &-video {
+    width: 270px;
+    height: 255px;
+    background-color: $bgVideo;
+    position: absolute;
+    bottom: 0;
+    transform: translateY(50%);
+    overflow: hidden;
+    img {
+      width: 100%;
+    }
+  }
+}

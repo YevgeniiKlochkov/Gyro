@@ -1,0 +1,75 @@
+.section-4{
+  background: url("../layout/Gyro-assets/bg-section4.jpg") 0 50%/cover no-repeat;
+  &_content, .diagram {
+    width: 40%;
+  }
+  .diagram {
+    background: #ffffff;
+    padding: 35px 45px 45px;
+    position: relative;
+    top: 75px;
+    *{
+      color: #737373;
+    }
+    &_title{
+      font-size: 2.9rem;
+      font-weight: 300;
+      margin-bottom: 45px;
+      text-align: center;
+    }
+    &_box{
+      position: relative;
+      .indicator{
+        width: 75px;
+        position: absolute;
+        bottom: 10px;
+
+      }
+      .indicator__other{
+        background: linear-gradient(0deg, #313031, #686868);
+        height: 140px;
+        left: 30%;
+      }
+      .indicator__gyro{
+        background: linear-gradient(0deg, #21a5df, #44d9e6);
+        height: 35px;
+        left: 70%;
+      }
+    }
+    .scale {
+      li{
+        margin-bottom: 20px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        &:last-child{
+          margin-bottom: 0;
+        }
+        &:after{
+          content: '';
+          width: 100%;
+          display: inline-block;
+          height: 1px;
+          background: #737373;
+        }
+        .scale_value{
+          width: 40px;
+          text-align: center;
+        }
+      }
+    }
+  }
+  .categories{
+    .category{
+      display: inline-block;
+      font-weight: 700;
+      font-size: 1.1rem;
+      &__first{
+        margin-left: 90px;
+      }
+      &__second{
+        margin-left: 65px;
+      }
+    }
+  }
+}

@@ -1,0 +1,654 @@
+@charset "UTF-8";
+/*Обнуление*/
+@import url("https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&family=Roboto:wght@300;400&display=swap");
+* {
+  padding: 0;
+  margin: 0;
+  border: 0;
+}
+
+*, *:before, *:after {
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+:focus, :active {
+  outline: none;
+}
+
+a:focus, a:active {
+  outline: none;
+}
+
+nav, footer, header, aside {
+  display: block;
+}
+
+html, body {
+  height: 100%;
+  width: 100%;
+  line-height: 1;
+  font-size: 14px;
+  -ms-text-size-adjust: 100%;
+  -moz-text-size-adjust: 100%;
+  -webkit-text-size-adjust: 100%;
+}
+
+input, button, textarea {
+  font-family: inherit;
+}
+
+input::-ms-clear {
+  display: none;
+}
+
+button {
+  cursor: pointer;
+}
+
+button::-moz-focus-inner {
+  padding: 0;
+  border: 0;
+}
+
+a, a:visited {
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: none;
+}
+
+ul li {
+  list-style: none;
+}
+
+img {
+  vertical-align: top;
+  width: 100%;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-size: inherit;
+  font-weight: 400;
+}
+
+/*--------------------*/
+@font-face {
+  font-family: "MuseoSansCyrl";
+  src: url("../fonts/MuseoSansCyrl-300.woff") format("woff"), url("../fonts/MuseoSansCyrl-300.ttf") format("truetype");
+  font-weight: 300;
+  font-style: normal;
+}
+@font-face {
+  font-family: "MuseoSansCyrl";
+  src: url("../fonts/MuseoSansCyrl-500.woff") format("woff"), url("../fonts/MuseoSansCyrl-500.ttf") format("truetype");
+  font-weight: 500;
+  font-style: normal;
+}
+@font-face {
+  font-family: "MuseoSansCyrl";
+  src: url("../fonts/MuseoSansCyrl-700.woff") format("woff"), url("../fonts/MuseoSansCyrl-700.ttf") format("truetype");
+  font-weight: 700;
+  font-style: normal;
+}
+@font-face {
+  font-family: "MuseoSansCyrl";
+  src: url("../fonts/MuseoSansCyrl-900.woff") format("woff"), url("../fonts/MuseoSansCyrl-900.ttf") format("truetype");
+  font-weight: 900;
+  font-style: normal;
+}
+* {
+  font: 400 1.1875rem/1.5625rem "Lato", Arial, sans-serif;
+  color: #2e2e2e;
+}
+
+.container {
+  max-width: 1124px;
+  margin: 0 auto;
+  padding: 0 15px;
+}
+
+.header {
+  padding: 55px 0;
+}
+.header_container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.header .menu_item {
+  text-decoration: none;
+  font-family: "Lato", sans-serif;
+  font-size: 1.25rem;
+  margin-left: 2.2rem;
+  position: relative;
+}
+.header .menu_item:after {
+  content: "";
+  display: block;
+  position: absolute;
+  right: 0;
+  width: 0;
+  height: 2px;
+  background-color: #2e2e2e;
+  transition: all 0.2s linear;
+}
+.header .menu_item:hover:after {
+  width: 100%;
+}
+
+.hero {
+  height: 450px;
+  position: relative;
+}
+.hero_container {
+  display: flex;
+  justify-content: space-between;
+}
+.hero-img {
+  max-width: 60%;
+  padding-top: 60px;
+}
+.hero-img img {
+  width: 100%;
+}
+.hero-content {
+  max-width: 33%;
+}
+.hero-content .content_title {
+  font-weight: 300;
+}
+.hero-content .content_text {
+  height: 5.6rem;
+}
+.hero-content .content_text:hover {
+  cursor: pointer;
+}
+.hero-content .content_text__full {
+  height: 14rem;
+}
+.hero-video {
+  width: 270px;
+  height: 255px;
+  background-color: #331c1c;
+  position: absolute;
+  bottom: 0;
+  transform: translateY(50%);
+  overflow: hidden;
+}
+.hero-video img {
+  width: 100%;
+}
+
+.content_title {
+  font-weight: 700;
+  font-size: 1.875rem;
+  font-family: "Roboto", Arial, sans-serif;
+  line-height: 1.5625rem;
+  margin-bottom: 2rem;
+}
+.content_text {
+  overflow: hidden;
+  margin-bottom: 2rem;
+  font-size: 1.36rem;
+  line-height: 1.79rem;
+}
+.content_button {
+  font-size: 1.1875rem;
+  font-weight: bold;
+}
+.content_button:after {
+  content: "";
+  display: inline-block;
+  width: 20px;
+  height: 12px;
+  background: url(../layout/Gyro-assets/arrow.svg) 0/100% no-repeat;
+}
+
+.section-1 {
+  background: url("../layout/Gyro-assets/bg-section1.jpg") 100% 0/50% auto no-repeat;
+}
+.section-1_content {
+  padding-top: 90px;
+  padding-bottom: 50px;
+}
+.section-1 .content_text {
+  max-width: 33%;
+  height: 9rem;
+}
+.section-1 .content_text__full {
+  height: 14rem;
+}
+.section-1 .advantages {
+  max-width: 75%;
+  display: grid;
+}
+.section-1 .advantages_box {
+  display: flex;
+}
+.section-1 .advantages_title {
+  width: 230px;
+  height: 208px;
+  background: #2a2a2c;
+  margin-top: -63px;
+  position: relative;
+  z-index: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.section-1 .advantages_title:before {
+  content: "";
+  position: relative;
+  margin-left: -300px;
+  width: 300px;
+  height: 208px;
+  background: #2a2a2c;
+}
+.section-1 .advantages_title .box-text * {
+  color: #fff;
+  display: block;
+}
+.section-1 .advantages_title .box-text span:nth-child(1) {
+  font-size: 2.29rem;
+  font-weight: 900;
+  padding-bottom: 5px;
+}
+.section-1 .advantages_title .box-text span:nth-child(2) {
+  font-family: "MuseoSansCyrl", Arial sans-serif;
+  font-size: 1.5rem;
+  font-weight: 500;
+}
+.section-1 .advantages_title .box-text span:nth-child(3) {
+  font-family: "MuseoSansCyrl", Arial sans-serif;
+  font-weight: 900;
+  font-size: 2rem;
+}
+.section-1 .advantages .advantages-list {
+  width: calc(100% - 230px);
+  display: flex;
+}
+.section-1 .advantages .advantages-list div {
+  text-align: center;
+  font-family: "MuseoSansCyrl", Arial sans-serif;
+}
+.section-1 .advantages .advantages-list .advantage {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 33.3333%;
+  height: 145px;
+  background: #e6e6e6;
+  border: 1px solid #fff;
+}
+.section-1 .advantages .advantages-list .advantage-title {
+  font-size: 3.21rem;
+  font-weight: 300;
+  margin-bottom: 1.43rem;
+}
+.section-1 .advantages .advantages-list .advantage-text {
+  font-size: 0.86rem;
+  font-weight: 700;
+  line-height: 1.76rem;
+  color: #676767;
+}
+
+.section-2 {
+  height: 760px;
+  background: url("../layout/Gyro-assets/section2-bg.png") 50% -21px/100% 46% no-repeat, url("../layout/Gyro-assets/section2-line.svg") 193% 325%/76% 94% no-repeat, #f1f1f1;
+  position: relative;
+}
+.section-2 .container {
+  height: 100%;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  padding-top: 148px;
+}
+.section-2_item {
+  width: 32%;
+  height: 460px;
+}
+.section-2 .slider {
+  padding: 45px;
+  background: #fff;
+  position: relative;
+}
+.section-2 .slider:after {
+  content: "";
+  display: inline-block;
+  background: #303030;
+  width: 300px;
+  height: 15px;
+  position: absolute;
+  bottom: -15px;
+  left: 50%;
+  transform: translateX(-50%);
+}
+.section-2 .slider_title {
+  font-size: 1.78rem;
+  font-weight: 700;
+  margin-bottom: 1.79rem;
+  text-align: center;
+}
+.section-2 .slider_text {
+  height: 5.5rem;
+  overflow: hidden;
+  font-size: 1.36rem;
+  line-height: 1.79rem;
+  letter-spacing: 0.5px;
+  margin-bottom: 4rem;
+}
+.section-2 .slider_img {
+  width: 150%;
+}
+.section-2 .slider_nav {
+  margin: 0 auto;
+  text-align: center;
+}
+.section-2 .slider_nav .nav_item {
+  width: 40px;
+  height: 6px;
+  background: #979797;
+  display: inline-block;
+  font-size: 0;
+  margin-right: 20px;
+}
+.section-2 .slider_nav .nav_item.active {
+  background: #303030;
+}
+.section-2 .advantages-video_title {
+  display: block;
+  height: 75px;
+  background: #fff;
+  text-align: center;
+  line-height: 84px;
+  text-transform: uppercase;
+  font-size: 1.43rem;
+  margin-bottom: 64px;
+}
+.section-2 .advantages-video_title:after {
+  content: "";
+  display: inline-block;
+  width: 20px;
+  height: 12px;
+  background: url(../layout/Gyro-assets/arrow.svg) 0/100% no-repeat;
+}
+.section-2 .advantages-video_img {
+  height: 270px;
+  overflow: hidden;
+  position: relative;
+}
+.section-2 .advantages-video_img > img {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+}
+.section-2 .advantages-video_list {
+  display: flex;
+  justify-content: space-around;
+  margin-bottom: 30px;
+}
+.section-2 .advantages-video_list li {
+  text-transform: uppercase;
+}
+
+.section-3 {
+  background: url("../layout/Gyro-assets/section3-bg.jpg") 50% 0/cover no-repeat;
+}
+.section-3 * {
+  color: #fff;
+}
+.section-3 .container {
+  display: grid;
+  grid: 150px 1fr 1fr/1fr 368px 1fr;
+  column-gap: 30px;
+}
+.section-3_title {
+  grid-column: 1/4;
+  grid-row: 1/2;
+  justify-self: center;
+  align-self: center;
+  display: flex;
+  align-items: center;
+}
+.section-3_title .title_text {
+  font-weight: 700;
+  font-size: 2.15rem;
+  letter-spacing: 0.5px;
+  text-transform: capitalize;
+}
+.section-3_title .title_icon {
+  margin-right: 20px;
+}
+.section-3_gyro {
+  grid-column: 2/3;
+  grid-row: 2/4;
+  background: linear-gradient(0deg, #c1c2c1, #f4f4f4);
+  border: 1px solid #f0f0f0;
+  border-bottom: none;
+  border-radius: 40px 40px 0 0;
+  padding: 25px 40px;
+}
+.section-3_gyro .gyro_logo {
+  width: 85px;
+  height: 22px;
+  margin: 0 auto 24px auto;
+}
+.section-3_gyro .gyro_content {
+  display: flex;
+  border-radius: 3px;
+  margin-bottom: 26px;
+}
+.section-3_gyro .gyro_content .content_img {
+  width: 55%;
+  background: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+}
+.section-3_gyro .gyro_content .content_img .img_text {
+  position: absolute;
+  top: 50%;
+}
+.section-3_gyro .gyro_content .content_img img {
+  width: 56px;
+  height: 112px;
+}
+.section-3_gyro .gyro_content .content_box {
+  width: 45%;
+  padding: 15px;
+  background: linear-gradient(0deg, #1da1dd, #46dae7);
+}
+.section-3_gyro .gyro_content .content_box .box_title {
+  font-size: 1.4rem;
+  text-transform: uppercase;
+  margin-bottom: 8px;
+}
+.section-3_gyro .gyro_content .content_box .box_text {
+  font-size: 0.7rem;
+  line-height: 0.85rem;
+  height: 4rem;
+  overflow: hidden;
+  margin-bottom: 10px;
+}
+.section-3_gyro .gyro_footer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.section-3_gyro .gyro_footer .footer_icon {
+  margin-right: 20px;
+}
+.section-3_gyro .gyro_footer .footer_icon img {
+  height: 100%;
+}
+.section-3_gyro .gyro_footer .footer_text {
+  color: #737373;
+}
+.section-3 .content_title {
+  font-weight: 400;
+  font-size: 1.9rem;
+  margin-bottom: 10px;
+}
+.section-3 .content_text {
+  font-size: 1rem;
+  height: 5rem;
+}
+.section-3 .content__1, .section-3 .content__3 {
+  padding-top: 15px;
+}
+.section-3 .content__1 {
+  order: 1;
+}
+.section-3 .content__2 {
+  order: 3;
+}
+.section-3 .content__3 {
+  order: 2;
+  text-align: right;
+}
+.section-3 .content__4 {
+  order: 4;
+  text-align: right;
+}
+
+.section-4 .container, .section-5 .container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.section-4 .container > div, .section-5 .container > div {
+  width: 40%;
+}
+.section-4 .container .content_text, .section-5 .container .content_text {
+  height: 5.2rem;
+}
+
+.section-4 {
+  background: url("../layout/Gyro-assets/bg-section4.jpg") 0 50%/cover no-repeat;
+}
+.section-4_content, .section-4 .diagram {
+  width: 40%;
+}
+.section-4 .diagram {
+  background: #ffffff;
+  padding: 35px 45px 45px;
+  position: relative;
+  top: 75px;
+}
+.section-4 .diagram * {
+  color: #737373;
+}
+.section-4 .diagram_title {
+  font-size: 2.9rem;
+  font-weight: 300;
+  margin-bottom: 45px;
+  text-align: center;
+}
+.section-4 .diagram_box {
+  position: relative;
+}
+.section-4 .diagram_box .indicator {
+  width: 75px;
+  position: absolute;
+  bottom: 10px;
+}
+.section-4 .diagram_box .indicator__other {
+  background: linear-gradient(0deg, #313031, #686868);
+  height: 140px;
+  left: 30%;
+}
+.section-4 .diagram_box .indicator__gyro {
+  background: linear-gradient(0deg, #21a5df, #44d9e6);
+  height: 35px;
+  left: 70%;
+}
+.section-4 .diagram .scale li {
+  margin-bottom: 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.section-4 .diagram .scale li:last-child {
+  margin-bottom: 0;
+}
+.section-4 .diagram .scale li:after {
+  content: "";
+  width: 100%;
+  display: inline-block;
+  height: 1px;
+  background: #737373;
+}
+.section-4 .diagram .scale li .scale_value {
+  width: 40px;
+  text-align: center;
+}
+.section-4 .categories .category {
+  display: inline-block;
+  font-weight: 700;
+  font-size: 1.1rem;
+}
+.section-4 .categories .category__first {
+  margin-left: 90px;
+}
+.section-4 .categories .category__second {
+  margin-left: 65px;
+}
+
+.section-5 {
+  padding: 90px 0;
+  background: url("../layout/Gyro-assets/bg-section5.jpg") 0 50%/cover no-repeat, #303030;
+}
+.section-5 * {
+  color: #fff;
+}
+.section-5 .nav_item {
+  width: 40px;
+  height: 6px;
+  background: #a6a6a6;
+  display: inline-block;
+  font-size: 0;
+  margin-right: 25px;
+}
+.section-5 .nav_item.active {
+  background: #fff;
+}
+
+.footer {
+  padding: 60px 0;
+}
+.footer .container {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  row-gap: 35px;
+}
+.footer .container .item_title {
+  font-size: 1.8rem;
+  text-transform: capitalize;
+  margin-bottom: 20px;
+}
+.footer .container .item_list li {
+  font-size: 1.3rem;
+  color: #737373;
+}
+.footer .container .item__1 {
+  order: 1;
+}
+.footer .container .item__2 {
+  order: 4;
+}
+.footer .container .item__3 {
+  order: 2;
+}
+.footer .container .item__4 {
+  order: 5;
+}
+.footer .container .item__5 {
+  order: 3;
+}
+
+/*# sourceMappingURL=styles.css.map */

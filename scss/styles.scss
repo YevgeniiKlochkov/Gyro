@@ -1,0 +1,92 @@
+@import "reset";
+@import "fonts";
+@import "colors";
+@import "mixins";
+
+//@import "adaptive";
+
+* {
+  font: $fontMain;
+  color: $fontColorBlack;
+}
+
+.container {
+  max-width: 1124px;
+  margin: 0 auto;
+  padding: 0 15px;
+}
+
+
+@import "header";
+@import "hero";
+
+.content {
+  &_title {
+    @include font(700, 1.875rem, 'Roboto', 1.5625rem);
+    margin-bottom: 2rem;
+  }
+  &_text {
+    overflow: hidden;
+    margin-bottom: 2rem;
+    font-size: 1.36rem;
+    line-height: 1.79rem;
+    }
+  &_button {
+    font-size: 1.1875rem;
+    font-weight: bold;
+    &:after {
+      content: '';
+      display: inline-block;
+      width: 20px;
+      height: 12px;
+      background: url(../layout/Gyro-assets/arrow.svg) 0/100% no-repeat;
+    }
+  }
+}
+
+@import "section-1";
+@import "section-2";
+@import "section-3";
+
+.section-4, .section-5{
+  .container{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    &>div{
+      width: 40%;
+    }
+    .content_text{
+      height: 5.2rem;
+    }
+  }
+}
+
+@import "section-4";
+@import "section-5";
+@import "footer";
+
+
+
+
+
+// .text-section {
+//   width: 50%;
+//   h2.text-header {
+//     @include font(700, 1.875rem, Lato, 1.5625rem);
+//   }
+// }
+// .section-1{
+//   font-size: 0;
+//   &_image, &_text {
+//     font-size: 16px;
+//     display: inline-block;
+//     width: 50%;
+//   }
+//   &_image img {
+//     width: 100%;
+//   }
+
+// }
+
+

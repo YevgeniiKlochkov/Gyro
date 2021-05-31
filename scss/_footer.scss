@@ -1,0 +1,37 @@
+.footer{
+  padding: 60px 0;
+  .container{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    row-gap: 35px;
+    .item{
+      &_title{
+        font-size: 1.8rem;
+        text-transform: capitalize;
+        margin-bottom: 20px;
+      }
+      &_list{
+        li{
+          font-size: 1.3rem;
+          color: #737373;
+        }
+      }
+    }
+    .item__1{
+      order: 1;
+    }
+    .item__2{
+      order: 4;
+    }
+    .item__3{
+      order: 2;
+    }
+    .item__4{
+      order: 5;
+    }
+    .item__5{
+      order: 3;
+    }
+  }
+
+}

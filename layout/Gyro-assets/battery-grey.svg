@@ -1,0 +1,20 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="45" height="21" viewBox="0 0 45 21">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: #8c8c8c;
+        fill-rule: evenodd;
+        filter: url(#filter);
+      }
+    </style>
+    <filter id="filter" x="733" y="2803" width="45" height="21" filterUnits="userSpaceOnUse">
+      <feGaussianBlur result="blur" stdDeviation="2.236" in="SourceAlpha"/>
+      <feFlood result="flood" flood-opacity="0.2"/>
+      <feComposite result="composite" operator="out" in2="blur"/>
+      <feOffset result="offset" dx="2.5" dy="4.33"/>
+      <feComposite result="composite-2" operator="in" in2="SourceAlpha"/>
+      <feBlend result="blend" mode="multiply" in2="SourceGraphic"/>
+    </filter>
+  </defs>
+  <path id="batarey-grey.svg" class="cls-1" d="M733,2803h42.69v21H733v-21Zm2.31,2.35h38.1v16.3h-38.1v-16.3Zm7.333,4.19h2.285v7.92h-2.285v-7.92Zm-2.762,2.8h7.809v2.32h-7.809v-2.32Zm21.118,0h7.835v2.32H761v-2.32Zm14.691-2.32H778v7.22h-2.31v-7.22Z" transform="translate(-733 -2803)"/>
+</svg>

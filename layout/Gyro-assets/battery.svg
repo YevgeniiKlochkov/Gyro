@@ -1,0 +1,15 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="80" height="37" viewBox="0 0 80 37">
+  <defs>
+    <style>
+      .cls-1 {
+        fill-rule: evenodd;
+        fill: url(#linear-gradient);
+      }
+    </style>
+    <linearGradient id="linear-gradient" x1="671" y1="2455.855" x2="591" y2="2425.145" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#45d8e7"/>
+      <stop offset="1" stop-color="#6cff6c"/>
+    </linearGradient>
+  </defs>
+  <path id="battery.svg" class="cls-1" d="M591,2422h75.918v37H591v-37Zm4.082,4.11h67.755v28.78H595.082v-28.78Zm13.061,7.4h4.081v13.98h-4.081v-13.98Zm-4.9,4.93h13.877v4.12H603.245v-4.12Zm37.551,0h13.877v4.12H640.8v-4.12Zm26.122-4.11H671v12.75h-4.082v-12.75Z" transform="translate(-591 -2422)"/>
+</svg>

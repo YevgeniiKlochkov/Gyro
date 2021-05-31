@@ -1,0 +1,19 @@
+.section-5 {
+  padding: 90px 0;
+  background: url("../layout/Gyro-assets/bg-section5.jpg") 0 50%/cover no-repeat, #303030;
+  * {
+    color: #fff;
+  }
+  .nav_item {
+    width: 40px;
+    height: 6px;
+    background: #a6a6a6;
+    display: inline-block;
+    font-size: 0;
+    margin-right: 25px;
+    &.active {
+      background: #fff;
+    }
+  }
+
+}

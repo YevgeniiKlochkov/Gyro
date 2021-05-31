@@ -1,0 +1,109 @@
+.section-2 {
+  height: 760px;
+  background: url("../layout/Gyro-assets/section2-bg.png") 50% -21px/100% 46% no-repeat,
+            url("../layout/Gyro-assets/section2-line.svg") 193% 325%/76% 94% no-repeat,
+            #f1f1f1;
+  position: relative;
+
+  .container {
+    height: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding-top: 148px;
+  }
+
+  &_item {
+    width: 32%;
+    height: 460px;
+
+  }
+  .slider {
+    padding: 45px;
+    background: #fff;
+    position: relative;
+    &:after{
+      content: '';
+      display: inline-block;
+      background: #303030;
+      width: 300px;
+      height: 15px;
+      position: absolute;
+      bottom: -15px;
+      left: 50%;
+      transform: translateX(-50%);
+    }
+    &_title {
+      font-size: 1.78rem;
+      font-weight: 700;
+      margin-bottom: 1.79rem;
+      text-align: center;
+    }
+    &_text {
+      height: 5.5rem;
+      overflow: hidden;
+      font-size: 1.36rem;
+      line-height: 1.79rem;
+      letter-spacing: 0.5px;
+      margin-bottom: 4rem;
+    }
+    &_img {
+      width: 150%;
+    }
+    &_nav {
+      margin: 0 auto;
+      text-align: center;
+      .nav_item {
+        width: 40px;
+        height: 6px;
+        background: #979797;
+        display: inline-block;
+        font-size: 0;
+        margin-right: 20px;
+        &.active {
+          background: #303030;
+        }
+      }
+    }
+  }
+
+  .advantages-video {
+    //height: 460px;
+    &_title {
+      display: block;
+      height: 75px;
+      background: #fff;
+      text-align: center;
+      line-height: 84px;
+      text-transform: uppercase;
+      font-size: 1.43rem;
+      margin-bottom: 64px;
+      &:after {
+        content: '';
+        display: inline-block;
+        width: 20px;
+        height: 12px;
+        background: url(../layout/Gyro-assets/arrow.svg) 0/100% no-repeat;
+      }
+    }
+    &_img {
+      height: 270px;
+      overflow: hidden;
+      position: relative;
+      &>img {
+        position: absolute;
+        bottom: 0;
+        width: 100%;
+      }
+    }
+    &_list {
+      display: flex;
+      justify-content: space-around;
+      margin-bottom: 30px;
+      li {
+        text-transform: uppercase;
+      }
+    }
+  }
+
+}

@@ -1,0 +1,8 @@
+@mixin font($weight, $size, $family, $line-height) {
+  font: {
+    weight: $weight;
+    size: $size;
+    family: $family, Arial, sans-serif;
+  }
+  line-height: $line-height;
+}
